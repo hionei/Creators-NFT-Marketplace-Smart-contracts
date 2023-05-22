@@ -1,268 +1,93 @@
-Contribution: 2021-12-27 20:00
+## Version
 
-Contribution: 2021-12-27 20:01
+**2.0.0-alpha.1**
 
-Contribution: 2021-12-27 20:02
+## Setting up local development
 
-Contribution: 2022-01-03 20:00
+### Pre-requisites
 
-Contribution: 2022-01-03 20:01
+- [Node.js](https://nodejs.org/en/) version 14.0+ and [yarn](https://yarnpkg.com/) for Javascript environment.
+- [Foundry](https://github.com/gakonst/foundry#installation) for running forge tests.
 
-Contribution: 2022-01-03 20:02
+1. Clone this repository
 
-Contribution: 2022-01-03 20:03
+```bash
+git clone https://github.com/Metadhana-Studio/roosterwars-contracts
+```
 
-Contribution: 2022-01-03 20:04
+2. Install dependencies
 
-Contribution: 2022-01-05 20:00
+```bash
+yarn
+```
 
-Contribution: 2022-01-05 20:01
+3. Set environment variables on the .env file according to .env.example
 
-Contribution: 2022-01-05 20:02
+```bash
+cp .env.example .env
+vim .env
+```
 
-Contribution: 2022-01-06 20:00
+4. Compile Solidity programs
 
-Contribution: 2022-01-06 20:01
+```bash
+yarn compile
+```
 
-Contribution: 2022-01-06 20:02
+### Development
 
-Contribution: 2022-01-06 20:03
+- To run hardhat tests
 
-Contribution: 2022-01-06 20:04
+```bash
+yarn test:hh
+```
 
-Contribution: 2022-01-17 20:00
+- To run forge(foundry) tests
 
-Contribution: 2022-01-17 20:01
+```bash
+yarn test:forge
+```
 
-Contribution: 2022-01-18 20:00
+- To start local blockchain
 
-Contribution: 2022-01-20 20:00
+```bash
+yarn localnode
+```
 
-Contribution: 2022-01-20 20:01
+- To run scripts on Rinkeby test
 
-Contribution: 2022-01-20 20:02
+```bash
+yarn script:rinkeby ./scripts/....
+```
 
-Contribution: 2022-01-20 20:03
+- To run deploy contracts on Rinkeby testnet (uses Hardhat deploy)
 
-Contribution: 2022-01-25 20:00
+```bash
+yarn deploy:rinkeby --tags ....
+```
 
-Contribution: 2022-01-26 20:00
+- To verify contracts on etherscan
 
-Contribution: 2022-01-26 20:01
+```bash
+yarn verify:rinkeby MyTokenContract,MyNFTContract
+```
 
-Contribution: 2022-01-26 20:02
+... see more useful commands in package.json file
 
-Contribution: 2022-01-31 20:00
+## Main Dependencies
 
-Contribution: 2022-01-31 20:01
+Contracts are developed using well-known open-source software for utility libraries and developement tools. You can read more about each of them.
 
-Contribution: 2022-01-31 20:02
+[OpenZeppelin](https://github.com/OpenZeppelin/openzeppelin-contracts)
 
-Contribution: 2022-01-31 20:03
+[Solmate](https://github.com/Rari-Capital/solmate)
 
-Contribution: 2022-02-02 20:00
+[Hardhat](https://github.com/nomiclabs/hardhat)
 
-Contribution: 2022-02-02 20:01
+[hardhat-deploy](https://github.com/wighawag/hardhat-deploy)
 
-Contribution: 2022-02-02 20:02
+[foundry](https://github.com/gakonst/foundry)
 
-Contribution: 2022-02-02 20:03
+[ethers.js](https://github.com/ethers-io/ethers.js/)
 
-Contribution: 2022-02-02 20:04
-
-Contribution: 2022-02-04 20:00
-
-Contribution: 2022-02-04 20:01
-
-Contribution: 2022-02-04 20:02
-
-Contribution: 2022-02-16 20:00
-
-Contribution: 2022-02-16 20:01
-
-Contribution: 2022-02-16 20:02
-
-Contribution: 2022-02-17 20:00
-
-Contribution: 2022-02-17 20:01
-
-Contribution: 2022-02-17 20:02
-
-Contribution: 2022-02-17 20:03
-
-Contribution: 2022-02-21 20:00
-
-Contribution: 2022-02-21 20:01
-
-Contribution: 2022-02-21 20:02
-
-Contribution: 2022-02-21 20:03
-
-Contribution: 2022-02-21 20:04
-
-Contribution: 2022-03-01 20:00
-
-Contribution: 2022-03-03 20:00
-
-Contribution: 2022-03-03 20:01
-
-Contribution: 2022-03-03 20:02
-
-Contribution: 2022-03-03 20:03
-
-Contribution: 2022-03-03 20:04
-
-Contribution: 2022-03-07 20:00
-
-Contribution: 2022-03-07 20:01
-
-Contribution: 2022-03-07 20:02
-
-Contribution: 2022-03-09 20:00
-
-Contribution: 2022-03-10 20:00
-
-Contribution: 2022-03-10 20:01
-
-Contribution: 2022-03-10 20:02
-
-Contribution: 2022-03-10 20:03
-
-Contribution: 2022-03-11 20:00
-
-Contribution: 2022-03-15 20:00
-
-Contribution: 2022-03-15 20:01
-
-Contribution: 2022-03-15 20:02
-
-Contribution: 2022-03-15 20:03
-
-Contribution: 2022-03-17 20:00
-
-Contribution: 2022-03-17 20:01
-
-Contribution: 2022-03-23 20:00
-
-Contribution: 2022-03-23 20:01
-
-Contribution: 2022-03-23 20:02
-
-Contribution: 2022-03-23 20:03
-
-Contribution: 2022-03-24 20:00
-
-Contribution: 2022-03-24 20:01
-
-Contribution: 2022-03-24 20:02
-
-Contribution: 2022-03-31 20:00
-
-Contribution: 2022-03-31 20:01
-
-Contribution: 2022-04-01 20:00
-
-Contribution: 2022-04-01 20:01
-
-Contribution: 2022-04-06 20:00
-
-Contribution: 2022-04-06 20:01
-
-Contribution: 2022-04-06 20:02
-
-Contribution: 2022-04-07 20:00
-
-Contribution: 2022-04-07 20:01
-
-Contribution: 2022-04-08 20:00
-
-Contribution: 2022-04-08 20:01
-
-Contribution: 2022-04-08 20:02
-
-Contribution: 2022-04-11 20:00
-
-Contribution: 2022-04-11 20:01
-
-Contribution: 2022-04-11 20:02
-
-Contribution: 2022-04-12 20:00
-
-Contribution: 2022-04-12 20:01
-
-Contribution: 2022-04-13 20:00
-
-Contribution: 2022-04-13 20:01
-
-Contribution: 2022-04-15 20:00
-
-Contribution: 2022-04-15 20:01
-
-Contribution: 2022-04-15 20:02
-
-Contribution: 2022-04-18 20:00
-
-Contribution: 2022-04-18 20:01
-
-Contribution: 2022-04-18 20:02
-
-Contribution: 2022-04-18 20:03
-
-Contribution: 2022-04-19 20:00
-
-Contribution: 2022-04-19 20:01
-
-Contribution: 2022-04-20 20:00
-
-Contribution: 2022-04-20 20:01
-
-Contribution: 2022-04-20 20:02
-
-Contribution: 2022-04-20 20:03
-
-Contribution: 2022-04-20 20:04
-
-Contribution: 2022-04-22 20:00
-
-Contribution: 2022-04-22 20:01
-
-Contribution: 2022-04-22 20:02
-
-Contribution: 2022-04-22 20:03
-
-Contribution: 2022-04-29 20:00
-
-Contribution: 2022-04-29 20:01
-
-Contribution: 2022-04-29 20:02
-
-Contribution: 2022-05-02 20:00
-
-Contribution: 2022-05-02 20:01
-
-Contribution: 2022-05-02 20:02
-
-Contribution: 2022-05-03 20:00
-
-Contribution: 2022-05-03 20:01
-
-Contribution: 2022-05-03 20:02
-
-Contribution: 2022-05-03 20:03
-
-Contribution: 2022-05-04 20:00
-
-Contribution: 2022-05-04 20:01
-
-Contribution: 2022-05-05 20:00
-
-Contribution: 2022-05-05 20:01
-
-Contribution: 2022-05-05 20:02
-
-Contribution: 2022-05-05 20:03
-
-Contribution: 2022-05-09 20:00
-
-Contribution: 2022-05-09 20:01
-
+[TypeChain](https://github.com/dethcrypto/TypeChain)
